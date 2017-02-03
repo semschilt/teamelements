@@ -1,0 +1,7 @@
+#phpstorm
+.idea/
+.idea_modules/
+
+#modules
+node_modules
+
