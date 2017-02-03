@@ -2,15 +2,16 @@
 @import 'vendor/_normalize.scss';
 
 // Mixins
-
+@import 'mixins/_position.scss';
 
 // Modules
-
+@import 'modules/_grid.scss';
 
 // Partials
-
+@import 'partials/_nav.scss';
 
 // Pages
+@import 'pages/_homepage.scss';
 
 
 
