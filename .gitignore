@@ -4,7 +4,7 @@
 .git/
 
 #modules
-node_modules
+
 
 #debug logs
 npm-debug.log
