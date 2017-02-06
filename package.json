@@ -1,0 +1,31 @@
+{
+  "name": "competa",
+  "version": "1.0.0",
+  "description": "fairtrade project",
+  "main": "gruntfile.js",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "less": "^2.7.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-sass": "~0.3.0",
+    "grunt-contrib-watch": "~0.4.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semschilt/teamelements.git"
+  },
+  "keywords": [
+    "watch"
+  ],
+  "author": "comepta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/semschilt/teamelements/issues"
+  },
+  "homepage": "https://github.com/semschilt/teamelements#readme"
+}
