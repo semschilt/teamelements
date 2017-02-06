@@ -1,4 +1,4 @@
-#editors
+#phpstorm
 .idea/
 .idea_modules/
 .git/
@@ -6,3 +6,5 @@
 #modules
 node_modules
 
+#debug logs
+npm-debug.log

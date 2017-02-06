@@ -1,11 +1,18 @@
 // Vendor
-@import 'vendor/_normalizer.scss';
+@import 'sass/vendor/_normalize';
+
 // Mixins
-@import 'module/_color.scss';
-@import 'module/_font.scss';
-@import 'module/_menu.scss';
-@import 'module/_content.scss';
-@import 'module/_button.scss';
-@import 'module/_contact.scss';
-@import 'module/_progress.scss';
-@import 'module/_footer.scss';
+@import 'sass/mixins/_position';
+@import 'sass/mixins/_transition';
+
+// Modules
+@import 'sass/modules/_grid.scss';
+
+// Partials
+@import 'sass/partials/_layout.scss';
+@import 'sass/partials/_nav.scss';
+@import 'sass/partials/_footer.scss';
+@import 'sass/partials/_content.scss';
+
+// Pages/
+@import 'sass/pages/_homepage.scss';
