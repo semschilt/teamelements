@@ -1,8 +1,0 @@
-#editors
-.idea/
-.idea_modules/
-.git/
-
-#modules
-node_modules
-
