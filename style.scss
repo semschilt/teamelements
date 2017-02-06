@@ -6,6 +6,10 @@
 @import 'sass/mixins/_transition';
 
 // Modules
+@import 'sass/modules/_vars.scss';
+@import 'sass/modules/_colors.scss';
+@import 'sass/modules/_default.scss';
+@import 'sass/modules/_border';
 @import 'sass/modules/_grid.scss';
 
 // Partials
