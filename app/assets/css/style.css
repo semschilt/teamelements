@@ -490,4 +490,6 @@ body {
       width: 20.2%; }
   .footer {
     float: right;
-    height: 100vh; } }
+    height: 100vh; }
+    .footer img {
+      display: block; } }
