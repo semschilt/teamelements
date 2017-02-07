@@ -15,10 +15,9 @@ module.exports = function(grunt) {
             }
         }
     });
-    grunt.registerTask('dev',['sass','jshint']);
-    grunt.registerTask('default',['watch']);
+    grunt.registerTask('dev',['sass']);
+    grunt.registerTask('default',['sass','watch']);
 
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
-
 }

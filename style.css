@@ -445,10 +445,21 @@ body {
   overflow: auto; }
 
 .con-1-3 {
-  width: 30%;
+  width: 32.66667%;
   margin: 0 auto;
   text-align: center;
   display: inline-block; }
+  @media screen and (max-width: 400px) {
+    .con-1-3 {
+      width: 32%; } }
+
+.navigation {
+  margin: 0;
+  float: left; }
+
+.transmission {
+  text-decoration: none;
+  list-style-type: none; }
 
 .footer {
   height: 60px;
@@ -457,5 +468,20 @@ body {
 .content {
   min-height: 100vh;
   overflow: auto; }
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 330vw;
+    max-height: 100vh; }
+
+  .content {
+    background-color: #F56462;
+    width: 25%; }
+    .content:nth-child(2) {
+      background-color: #00C3e5; }
+    .content:nth-child(3) {
+      background-color: #F56462; }
+    .content:nth-child(4) {
+      background-color: #00C3e5; } }
 
 /*# sourceMappingURL=style.css.map */
