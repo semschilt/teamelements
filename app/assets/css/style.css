@@ -472,13 +472,22 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     min-width: 400vw;
-    max-height: 100vh; }
+    min-height: 100vh; }
   .content {
     background-color: #F56462;
-    width: 25%; }
+    display: inline-block; }
+    .content:nth-child(1) {
+      background-color: #F56462;
+      width: 25%; }
     .content:nth-child(2) {
-      background-color: #00C3e5; }
+      background-color: #00C3e5;
+      width: 25%; }
     .content:nth-child(3) {
-      background-color: #F56462; }
+      background-color: #F56462;
+      width: 25%; }
     .content:nth-child(4) {
-      background-color: #00C3e5; } }
+      background-color: #00C3e5;
+      width: 20.2%; }
+  .footer {
+    float: right;
+    height: 100vh; } }

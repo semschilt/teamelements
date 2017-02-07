@@ -10,4 +10,4 @@ node_modules/
 #debug logs
 npm-debug.log
 
-.sass-cache
+.sass-cache/
