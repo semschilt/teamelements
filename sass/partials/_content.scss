@@ -2,4 +2,48 @@
   min-height:100vh;
   overflow:auto;
 
+  .con-pc {
+    &-25 {
+      width:25.4vw;
+      height:50vh;
+      float:left;
+      &:nth-child(1){
+        background-color:$red;
+      }
+      &:nth-child(2){
+        background-color:$green;
+      }
+    }
+
+    &-40{
+      width:40vw;
+      height:50vh;
+      background-color:$green;
+      float:left
+    }
+
+    &-50 {
+      width: 49vw;
+      height: 50vh;
+      float: left;
+      background-image:url("../images/fair_trade.png");
+      background-size:cover;
+    }
+
+    &-60 {
+      width:59.9vw;
+      height:25vh;
+      float:left;
+      &:nth-child(1){
+        background-color:$red;
+        display:block;
+      }
+      &:nth-child(2){
+        background-color:$blue;
+        display:block;
+
+      }
+    }
+  }
+
 }

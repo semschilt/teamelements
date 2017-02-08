@@ -1,10 +1,10 @@
 // desktop version
 @media screen and (min-width: 768px) {
-  body{
-    overflow-y: hidden;
-  }
+  //body{
+  //  overflow-y: hidden;
+  //}
   .container {
-    min-width: 330vw;
+    min-width: 333vw;
     min-height: 100vh;
   }
   .content {
@@ -20,11 +20,11 @@
     }
     &:nth-child(3) {
       background-color: $red;
-      width: 30%;
+      width: 10%;
     }
     &:nth-child(4) {
       background-color: $blue;
-      width: 8%;
+      width: 28%;
     }
     &:nth-child(5) {
       width: 1.6%;
