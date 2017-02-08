@@ -1,24 +1,23 @@
 .footer {
-  height:60px;
   background-color:$green;
+  .social{
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+    border-height: 2px;
+    border-color: $white;
+    &:hover{
+      background-color:$white;
+    }
+   &:nth-child(4){
+     position: absolute;
+     bottom: 0;
+     width: 50px;
+     height: auto;
+   }
+  }
+
+
 }
 
-.social{
-  height: 50px;
-  width: 50px;
-  border-radius: 5px;
-  border-height: 2px;
-  border-color: white;
-}
 
-.fairtrade{
-  width: 50px;
-  height: 50px;
-  margin: 1200% 0 0 0;
-}
-.social:hover {
-    background-color: white;
-}
-.fairtrade:hover{
-    background-color: white;
-}
