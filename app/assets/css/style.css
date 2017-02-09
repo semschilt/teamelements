@@ -462,9 +462,6 @@ body {
 .container {
   display: flex; }
 
-.column {
-  width: 33%; }
-
 @media screen and (min-width: 768px) {
   .content {
     height: 100vh;
@@ -473,4 +470,7 @@ body {
       background-image: url("../images/home_banner1.jpg");
       width: 100%;
       height: auto;
-      background-size: contain; } }
+      background-size: contain; }
+    .content .content-half {
+      width: 50vw;
+      height: 100vh; } }
