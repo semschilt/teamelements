@@ -2,7 +2,6 @@
   display: flex;
   position: relative;
   flex-wrap: wrap;
-
   .content {
 
     // content
@@ -28,12 +27,19 @@
         background-image: url("../images/download.png");
         background-size: cover;
         height: 75vh;
-
+      }
+      &--how-it-works {
+        background-image: url("../images/how_it_works.png");
+        background-size: cover;
+        height: 50vh;
+      }
+      &--terms {
+        background-image: url("../images/terms.png");
+        background-size: cover;
+        height: 50vh;
       }
       &--join {
         height: 25vh;
-
-
       }
 
       &--green {
@@ -47,14 +53,24 @@
       }
 
       &--image {
-        background-image: url("../images/fair_trade.png");
+        background-image: url("../images/fair_trade.jpg");
         width: 45vw;
         height: 50vh;
         background-size: cover;
-
       }
     }
 
   }
 
+}
+.content-half{
+  min-width:50vw;
+}
+.quarter-half{
+  min-width:77.5vw;
+}
+.content-footer{
+  height:100vh;
+  min-width:5vw;
+  background-color:$green;
 }

@@ -8,16 +8,15 @@
     height: 100vh;
     min-width: 100vw;
 
-    &:nth-child(1){
-      background-image:url("../images/home_banner1.jpg");
-      width:100%;
-      height:auto;
-      background-size:contain;
+    &:nth-child(1) {
+      background-image: url("../images/banner.png");
+      background-repeat: no-repeat;
+      width: 100%;
+      height: auto;
+      background-size: contain;
     }
 
-    .content-half{
-      width:50vw;
-      height: 100vh;
-    }
   }
+
+
 }
