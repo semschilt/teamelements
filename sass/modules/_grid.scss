@@ -1,36 +1,40 @@
-.content-row{
-  display:flex;
-  position:relative;
+.content-row {
+  display: flex;
+  position: relative;
   flex-wrap: wrap;
 
-  .content{
+  .content {
+
     // content
     &-box {
-      width:50vw;
-      height:50vh;
       // Box
-      &--small{
-        width:27.5vw;
-        height:50vh;
+      &--small {
+        width: 27.5vw;
+        height: 50vh;
       }
-      &--medium{
-        width:45vw;
+      &--medium {
+        width: 45vw;
       }
-      &--large{
-        width:55vw;
-        height:25vh;
+      &--half {
+        width: 50vw;
+      }
+      &--large {
+        width: 55vw;
+      }
+      &--half-box {
+        height: 25vh;
       }
       &--download {
-        background-image:url("../images/download.png");
-        background-size:cover;
-        height:75vh;
+        background-image: url("../images/download.png");
+        background-size: cover;
+        height: 75vh;
 
       }
       &--join {
-        height:25vh;
+        height: 25vh;
+
 
       }
-
 
       &--green {
         background-color: $green;
@@ -43,10 +47,10 @@
       }
 
       &--image {
-        background-image:url("../images/fair_trade.png");
-        width:45vw;
-        height:50vh;
-        background-size:cover;
+        background-image: url("../images/fair_trade.png");
+        width: 45vw;
+        height: 50vh;
+        background-size: cover;
 
       }
     }

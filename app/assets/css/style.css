@@ -435,6 +435,8 @@ body {
     height: 50vh; }
   .content-row .content-box--medium {
     width: 45vw; }
+  .content-row .content-box--half {
+    width: 50vw; }
   .content-row .content-box--large {
     width: 55vw; }
   .content-row .content-box--half-box {
