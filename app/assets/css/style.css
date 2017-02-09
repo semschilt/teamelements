@@ -430,34 +430,32 @@ body {
   display: flex;
   position: relative;
   flex-wrap: wrap; }
-  .content-row .content-box {
-    width: 50vw;
+  .content-row .content-box--small {
+    width: 27.5vw;
     height: 50vh; }
-    .content-row .content-box--small {
-      width: 27.5vw;
-      height: 50vh; }
-    .content-row .content-box--medium {
-      width: 45vw; }
-    .content-row .content-box--large {
-      width: 55vw;
-      height: 25vh; }
-    .content-row .content-box--download {
-      background-image: url("../images/download.png");
-      background-size: cover;
-      height: 75vh; }
-    .content-row .content-box--join {
-      height: 25vh; }
-    .content-row .content-box--green {
-      background-color: #75C398; }
-    .content-row .content-box--red {
-      background-color: #F56462; }
-    .content-row .content-box--blue {
-      background-color: #00C3e5; }
-    .content-row .content-box--image {
-      background-image: url("../images/fair_trade.png");
-      width: 45vw;
-      height: 50vh;
-      background-size: cover; }
+  .content-row .content-box--medium {
+    width: 45vw; }
+  .content-row .content-box--large {
+    width: 55vw; }
+  .content-row .content-box--half-box {
+    height: 25vh; }
+  .content-row .content-box--download {
+    background-image: url("../images/download.png");
+    background-size: cover;
+    height: 75vh; }
+  .content-row .content-box--join {
+    height: 25vh; }
+  .content-row .content-box--green {
+    background-color: #75C398; }
+  .content-row .content-box--red {
+    background-color: #F56462; }
+  .content-row .content-box--blue {
+    background-color: #00C3e5; }
+  .content-row .content-box--image {
+    background-image: url("../images/fair_trade.png");
+    width: 45vw;
+    height: 50vh;
+    background-size: cover; }
 
 .container {
   display: flex; }
