@@ -2,8 +2,11 @@
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  .content {
+}
 
+//pc tablet
+@media screen and (min-width: 768px) {
+  .content {
     // content
     &-box {
       // Box
@@ -41,7 +44,6 @@
       &--join {
         height: 25vh;
       }
-
       &--green {
         background-color: $green;
       }
@@ -51,26 +53,101 @@
       &--blue {
         background-color: $blue;
       }
-
       &--image {
         background-image: url("../images/fair_trade.jpg");
         width: 45vw;
         height: 50vh;
         background-size: cover;
       }
-    }
+      &--mobile-only {
+        display: none;
+      }
 
+    }
+  }
+}
+
+.content-half {
+  min-width: 50vw;
+}
+
+.quarter-half {
+  min-width: 77.5vw;
+}
+
+//<!------- end pc tablet ----->
+//mobile version
+@media screen and (max-width: 768px) {
+  .break {
+    display: none;
+  }
+  .content-half {
+    min-height: 25vh;
+    min-width: 100vw;
+  }
+  .quarter-half {
+    mmin-height: 25vh;
+    min-width: 100vw;
+  }
+  .content {
+    min-height: 25vh;
+    min-width: 100vw;
+
+    &:nth-child(1) {
+      background-image: url("../images/mobile_banner.png");
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 100vh;
+      background-size: cover;
+    }
+    &-box {
+      &--green {
+        background-color: $green;
+      }
+      &--red {
+        background-color: $red;
+      }
+      &--blue {
+        background-color: $blue;
+      }
+      &--mobile-full {
+        width: 100vw;
+        height: 25vh;
+        border: 1px solid $white;
+      }
+      &--mobile-half {
+        width: 49.3vw;
+        height: 25vh;
+        border: 1px solid $white;
+      }
+      &--mobile-third {
+        width: 32.7vw;
+        height: 25vh;
+        border: 1px solid $white;
+      }
+      &--mobile-image {
+        background-image: url("../images/fair_trade.jpg");
+        background-repeat:no-repeat;
+        width: 100vw;
+        height: 50vh;
+        background-size: cover;
+        border: 1px solid $white;
+      }
+      &--mobile-download {
+        background-image: url("../images/download.png");
+        background-repeat:no-repeat;
+        background-size: cover;
+        height: 25vh;
+      }
+      &--mobile-terms {
+        background-image: url("../images/mobile_terms.png");
+        background-repeat:no-repeat;
+        background-size: cover;
+        height: 25vh;
+      }
+
+    }
   }
 
-}
-.content-half{
-  min-width:50vw;
-}
-.quarter-half{
-  min-width:77.5vw;
-}
-.content-footer{
-  height:100vh;
-  min-width:5vw;
-  background-color:$green;
+
 }

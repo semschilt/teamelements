@@ -1,9 +1,8 @@
-.container {
-  display: flex;
-}
-
 //tablet pc
 @media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+  }
   .content {
     height: 100vh;
     min-width: 100vw;
@@ -18,5 +17,13 @@
 
   }
 
+}
+//<!-- end pc tablet -->
+
+//mobile
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+  }
 
 }

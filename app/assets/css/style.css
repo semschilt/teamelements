@@ -430,42 +430,46 @@ body {
   display: flex;
   position: relative;
   flex-wrap: wrap; }
-  .content-row .content-box--small {
+
+@media screen and (min-width: 768px) {
+  .content-box--small {
     width: 27.5vw;
     height: 50vh; }
-  .content-row .content-box--medium {
+  .content-box--medium {
     width: 45vw; }
-  .content-row .content-box--half {
+  .content-box--half {
     width: 50vw; }
-  .content-row .content-box--large {
+  .content-box--large {
     width: 55vw; }
-  .content-row .content-box--half-box {
+  .content-box--half-box {
     height: 25vh; }
-  .content-row .content-box--download {
+  .content-box--download {
     background-image: url("../images/download.png");
     background-size: cover;
     height: 75vh; }
-  .content-row .content-box--how-it-works {
+  .content-box--how-it-works {
     background-image: url("../images/how_it_works.png");
     background-size: cover;
     height: 50vh; }
-  .content-row .content-box--terms {
+  .content-box--terms {
     background-image: url("../images/terms.png");
     background-size: cover;
     height: 50vh; }
-  .content-row .content-box--join {
+  .content-box--join {
     height: 25vh; }
-  .content-row .content-box--green {
+  .content-box--green {
     background-color: #75C398; }
-  .content-row .content-box--red {
+  .content-box--red {
     background-color: #F56462; }
-  .content-row .content-box--blue {
+  .content-box--blue {
     background-color: #00C3e5; }
-  .content-row .content-box--image {
+  .content-box--image {
     background-image: url("../images/fair_trade.jpg");
     width: 45vw;
     height: 50vh;
     background-size: cover; }
+  .content-box--mobile-only {
+    display: none; } }
 
 .content-half {
   min-width: 50vw; }
@@ -473,39 +477,114 @@ body {
 .quarter-half {
   min-width: 77.5vw; }
 
-.content-footer {
-  height: 100vh;
-  min-width: 5vw;
-  background-color: #75C398; }
-
-.footer-list {
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center; }
-
-.footer-item {
-  padding: 25px 0 0; }
-  .footer-item:nth-child(4) {
-    position: absolute;
-    bottom: 0; }
-    .footer-item:nth-child(4) .footer-image {
-      max-height: 50px;
-      max-width: 50px;
-      border: none;
-      margin-left: 7px; }
-
-.footer-image {
-  border: 2px solid #fff;
-  padding: 3px; }
-  .footer-image:hover {
-    background-color: #F56462;
-    transition: 550ms; }
-
-.container {
-  display: flex; }
+@media screen and (max-width: 768px) {
+  .break {
+    display: none; }
+  .content-half {
+    min-height: 25vh;
+    min-width: 100vw; }
+  .quarter-half {
+    mmin-height: 25vh;
+    min-width: 100vw; }
+  .content {
+    min-height: 25vh;
+    min-width: 100vw; }
+    .content:nth-child(1) {
+      background-image: url("../images/mobile_banner.png");
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 100vh;
+      background-size: cover; }
+    .content-box--green {
+      background-color: #75C398; }
+    .content-box--red {
+      background-color: #F56462; }
+    .content-box--blue {
+      background-color: #00C3e5; }
+    .content-box--mobile-full {
+      width: 100vw;
+      height: 25vh;
+      border: 1px solid #fff; }
+    .content-box--mobile-half {
+      width: 49.3vw;
+      height: 25vh;
+      border: 1px solid #fff; }
+    .content-box--mobile-third {
+      width: 32.7vw;
+      height: 25vh;
+      border: 1px solid #fff; }
+    .content-box--mobile-image {
+      background-image: url("../images/fair_trade.jpg");
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 50vh;
+      background-size: cover;
+      border: 1px solid #fff; }
+    .content-box--mobile-download {
+      background-image: url("../images/download.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 25vh; }
+    .content-box--mobile-terms {
+      background-image: url("../images/mobile_terms.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 25vh; } }
 
 @media screen and (min-width: 768px) {
+  .footer-list {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center; }
+  .footer-item {
+    padding: 25px 0 0; }
+    .footer-item:nth-child(4) {
+      position: absolute;
+      bottom: 0; }
+      .footer-item:nth-child(4) .footer-image {
+        max-height: 50px;
+        max-width: 50px;
+        border: none;
+        margin-left: 7px; }
+  .footer-image {
+    border: 2px solid #fff;
+    padding: 3px; }
+    .footer-image:hover {
+      background-color: #F56462;
+      transition: 550ms; }
+  .content-footer {
+    height: 100vh;
+    min-width: 5vw;
+    background-color: #75C398; } }
+
+@media screen and (max-width: 768px) {
+  .content-footer {
+    height: 11vh;
+    min-width: 100vw;
+    background-color: #75C398;
+    border: 1px solid #fff; }
+    .content-footer .footer-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+    .content-footer .footer-item {
+      display: inline-block;
+      padding: 2px; }
+      .content-footer .footer-item:nth-child(4) .footer-image {
+        max-height: 50px;
+        max-width: 50px;
+        border: none; }
+    .content-footer .footer-image {
+      border: 2px solid #fff;
+      padding: 3px; }
+      .content-footer .footer-image:hover {
+        background-color: #F56462;
+        transition: 550ms; } }
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex; }
   .content {
     height: 100vh;
     min-width: 100vw; }
@@ -515,3 +594,7 @@ body {
       width: 100%;
       height: auto;
       background-size: contain; } }
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: block; } }
