@@ -1,0 +1,37 @@
+.navigation{
+    width:250px;
+    height:100vh;
+    z-index: -1;
+
+    .nav-bar{
+      height:100vh;
+      padding: 0;
+      margin-top: 0;
+      list-style:none;
+      background-color: $green;
+    }
+    .nav-item{
+      margin: 0;
+      &:nth-child(1){
+         padding-top: 75%;
+      }
+    }
+
+    a{
+      text-transform: uppercase;
+      color:$white;
+      text-decoration:none;
+      display:block;
+      padding:8px 25px;
+      font-weight:500;
+      &:hover{
+          background: #90cfac;
+      }
+    }
+}
+
+.register-button {
+  margin: 20% 5%;
+  background-color: $red;
+}
+

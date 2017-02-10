@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Competa</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Competa</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 <div class="container">
-
     <section class="content">
         <header class="banner"></header>
+
+    <input id="menu-toggle" type="checkbox">
+    <label class="label-for-check color-hamburger " for="menu-toggle">
+        <span class="hamburger-icon"></span>
+        <span class="hamburger-icon"></span>
+        <span class="hamburger-icon"></span>
+    </label>
+    <nav class="navigation">
+        <ul class="nav-bar">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">What we do</a></li>
+            <li class="nav-item"><a href="#">Why we do it</a></li>
+            <li class="nav-item"><a href="#">How we do it</a></li>
+            <li class="nav-item"><a href="#">Join us</a></li>
+            <li class="nav-item"><a href="#">Standards</a></li>
+            <li class="nav-item"><a><label for="item">Contact</label></a></li>
+            <a class="register-button" href="#">Register project</a>
+        </ul>
+    </nav>
+
+
+    <div class="show">
+        <input type="checkbox" id="item">
+        <div class="contact-show">
+            <div class="content-contact" >
+                <section class="contact">
+                    <span class="title">Contact</span>
+                    <form class="contact-form">
+                        <input class="input" type="text" name="name" placeholder="Name...">
+                        <input class="input" type="text" name="email" placeholder="Email...">
+                        <input class="input" type="text" name="company" placeholder="Company...">
+                        <textarea class="input" placeholder="Message..."></textarea>
+                        <input class="send" type="submit" value="send">
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
     </section>
 
     <section class="content">
@@ -80,6 +117,5 @@
     </section>
 
 </div>
-
 </body>
 </html>
