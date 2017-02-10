@@ -1,107 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Competa</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Competa</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-<nav>
-    <ul class="navigation">
-        <li class="nav-item"><a class="transmission" href="#">Home</a></li>
-        <li class="nav-item"><a class="transmission" href="#">What we do</a></li>
-        <li class="nav-item"><a class="transmission" href="#">Why we do it</a></li>
-        <li class="nav-item"><a class="transmission" href="#">How we do it</a></li>
-        <li class="nav-item"><a class="transmission" href="#">Join us</a></li>
-        <li class="nav-item"><a class="transmission" href="#">Standards</a></li>
-        <li class="nav-item"><a class="transmission" href="#">Contact</a></li>
-        <li class="nav-item"><a class="transmission" href="#">Register project</a></li>
-    </ul>
-</nav>
 <div class="container">
     <section class="content">
-        <header class="intro"><img src="assets/images/banner.jpg"/></header>
-    </section>
+        <header class="banner"></header>
 
-    <section class="content">
-        <a class="transmission" href="#">
-            <div class="content-left">
-                <div class="block-left">
-                    <h2><span class="bottom-line">What we do</span></h2>
+    <input id="menu-toggle" type="checkbox">
+    <label class="label-for-check color-hamburger " for="menu-toggle">
+        <span class="hamburger-icon"></span>
+        <span class="hamburger-icon"></span>
+        <span class="hamburger-icon"></span>
+    </label>
+    <nav class="navigation">
+        <ul class="nav-bar">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">What we do</a></li>
+            <li class="nav-item"><a href="#">Why we do it</a></li>
+            <li class="nav-item"><a href="#">How we do it</a></li>
+            <li class="nav-item"><a href="#">Join us</a></li>
+            <li class="nav-item"><a href="#">Standards</a></li>
+            <li class="nav-item"><a><label for="item">Contact</label></a></li>
+            <a class="register-button" href="#">Register project</a>
+        </ul>
+    </nav>
+
+
+    <div class="show">
+        <input type="checkbox" id="item">
+        <div class="contact-show">
+            <div class="content-contact" >
+                <div class="contact">
+                    <form class="contact-form">
+                        <span class="title">Contact</span>
+                        <input class="input" type="text" name="name" placeholder="Name...">
+                        <input class="input" type="text" name="email" placeholder="Email...">
+                        <input class="input" type="text" name="company" placeholder="Company...">
+                        <textarea class="input" placeholder="Message..."></textarea>
+                        <input class="send" type="submit" value="send">
+                    </form>
                 </div>
             </div>
-        </a>
-        <a class="transmission" href="#">
-            <div class="content-right">
-                <h3><span class="bottom-line">Why we do it</span></h3>
-            </div>
-        </a>
-        <a class="transmission" href="#">
-            <div class="content-center">
-                <h3><span class="bottom-line">Who can join</span></h3>
-            </div>
-        </a>
-        <a class="transmission" href="#">
-            <div class="content-center">
-                <h5><span class="bottom-line">"Fairtrade software is the best"</span></h5>
-                <img class="fairtrade-img" src="">
-            </div>
-        </a>
+        </div>
+    </div>
     </section>
 
     <section class="content">
-        <a class="transmission" href="#">
-            <div class="con-1-3">
-                <h4><span class="bottom-line">Why fairtrade software</span></h4>
+        <div class="content-row">
+            <div class="content-box content-box--medium content-box--green content-box--mobile-half">
+              <h2><span>What we do</span></h2>
             </div>
-        </a>
-        <a class="transmission" href="#">
-            <div class="con-1-3">
-                <h3><span class="bottom-line">Downloads</span></h3>
+            <!-- desktop version of the content box -->
+            <div class="break">
+                <div class="content-box content-box--large content-box--half-box content-box--red">
+                  <h2><span>Who can join</span></h2>
+                </div>
+                <div class="content-box content-box--large content-box--half-box content-box--blue">
+                  <h4><span>Our mission</span></h4>
+                </div>
             </div>
-        </a>
-        <a class="transmission" href="#">
-            <div class="con-1-3">
-                <h3><span class="bottom-line">Join us</span></h3>
+            <!--end -->
+            <!-- mobile version of the content box -->
+            <div class="content-box content-box--red content-box--mobile-only content-box--mobile-half">
+              <h3><span>Why we do it</span></h3>
             </div>
-        </a>
-        <a class="transmission" href="#">
-            <div class="content-left">
-                <h4><span class="bottom-line">How it works</span></h4>
+            <div class="content-box content-box--blue content-box--mobile-only content-box--mobile-full">
+              <h3><span>Who can join</span></h3>
             </div>
-        </a>
-        <a class="transmission" href="#">
-            <div class="content-right">
-                <h4><span class="bottom-line">Our mission</span></h4>
-            </div>
-        </a>
-    </section>
-    <section class="content">
-        <a class="transmission" href="#">
-            <div class="content-center">
-                <h3><span class="bottom-line">Terms & conditions</span></h3>
-                <img class="terms-conditions-img" src="">
-            </div>
-        </a>
-        <a class="transmission" href="#">
-            <div class="content-left">
-                <h2><span class="bottom-line">"we do what we do"</span></h2>
-            </div>
-        </a>
-        <a class="transmission" href="#">
-            <div class="content-right">
-                <h2><span class="bottom-line">Standards</span></h2>
-            </div>
-        </a>
+            <!--end -->
+            <!-- mobile version of the content box -->
+            <div class="content-box content-box--mobile-only content-box--mobile-image"><p>"Fairtrade software is the best"</p></div>
+            <div class="content-box  content-box--mobile-only content-box--red content-box--mobile-half"><h4><span>Our mission</span></h4></div>
+            <div class="content-box  content-box--mobile-only content-box--green content-box--mobile-half"><h4><span>why fairtrade software</span></h4></div>
+            <!--end -->
+            <!-- desktop version of the content box -->
+            <div class="content-box content-box--small content-box--red break"><h3><span>Why we do it</span></h3></div>
+            <div class="content-box content-box--medium content-box--image break"><p>"Fairtrade software is the best"</p></div>
+            <div class="content-box content-box--small content-box--green break"><h4><span>Why fairtrade software</span></h4></div>
+            <!--end -->
+        </div>
     </section>
 
-    <footer class="footer">
-        <img class="" src="#">
-        <img class="" src="#">
-        <img class="" src="#">
-        <img class="" src="#">
-    </footer>
+
+    <section class="content-half">
+        <div class="content-row">
+            <div class="content-box content-box--half content-box--how-it-works content-box--green content-box--mobile-only content-box--mobile-third content-box--blue"><h4><span>how it works</span></h4></div>
+            <div class="content-box content-box--half content-box--download content-box--mobile-download content-box--mobile-third"><h3><span>Downloads</span></h3></div>
+            <div class="content-box content-box--join content-box content-box--half content-box--blue content-box--mobile-third"><h3><span>join us</span></h3></div>
+
+        </div>
+    </section>
+
+    <section class="quarter-half">
+        <div class="content-row">
+            <div class="content-box content-box--half content-box--how-it-works content-box--blue break"><h4><span>how it works</span></h4></div>
+            <div class="content-box content-box--small content-box--terms content-box--mobile-terms content-box--mobile-full"><p>Terms & conditions</p></div>
+            <div class="content-box content-box--small content-box--green content-box--mobile-half"><h3><span>Standards</span></h3></div>
+            <div class="content-box content-box--half  content-box--red content-box--mobile-half"><h3><span>We do What we do</span></h3></div>
+        </div>
+    </section>
+
+    <section class="content-footer">
+        <footer class="footer">
+            <ul class="footer-list">
+                <li class="footer-item"><a href="#"><img class="footer-image" src="assets/images/facebook.png"/></a></li>
+                <li class="footer-item"><a href="#"><img class="footer-image" src="assets/images/linkedin.png"/></a></li>
+                <li class="footer-item"><a href="#"><img class="footer-image" src="assets/images/twitter.png"/></a></li>
+                <li class="footer-item"><a href="#"><img class="footer-image" src="assets/images/logo.png"/></a></li>
+            </ul>
+        </footer>
+    </section>
 
 </div>
 </body>

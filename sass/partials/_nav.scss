@@ -1,9 +1,41 @@
 .navigation{
-  margin:0;
-  float:left;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 400ms, opacity 400ms;
 
+    width:250px;
+    height:100vh;
+    z-index: -1;
+
+    .nav-bar{
+      height:100vh;
+      padding: 0;
+      margin-top: 0;
+      list-style:none;
+      background-color: $green;
+    }
+    .nav-item{
+      margin: 0;
+      &:nth-child(1){
+         padding-top: 60%;
+      }
+    }
+
+    a{
+      text-transform: uppercase;
+      color:$white;
+      text-decoration:none;
+      display:block;
+      padding:8px 25px;
+      font-weight:500;
+      &:hover{
+          background: #90cfac;
+      }
+    }
 }
-.transmission{
-  text-decoration: none;
-  list-style-type: none;
+
+.register-button {
+  margin: 50% 5%;
+  background-color: $red;
 }
+
