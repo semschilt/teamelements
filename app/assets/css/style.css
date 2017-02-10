@@ -408,13 +408,15 @@ body {
   color: #fff; }
   body p {
     font-weight: 400;
-    font-style: normal;
+    font-style: italic;
+    font-style: bold;
     text-align: center; }
   body span {
     border-bottom: 2px solid #fff; }
   body p, body h2, body h3, body h4 {
     margin: 0 auto;
-    font-size: 40px;
+    font-size: 6.0vh;
+    font-size: 3.5vw;
     position: relative;
     text-align: center;
     top: 50%;
