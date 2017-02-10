@@ -404,27 +404,33 @@ template {
   display: none; }
 
 body {
-  font-family: Raleway; }
+  font-family: Raleway;
+  color: #fff; }
   body p {
     font-weight: 400;
     font-style: normal;
     text-align: center; }
+  body span {
+    border-bottom: 2px solid #fff; }
+  body p, body h2, body h3, body h4 {
+    margin: 0 auto;
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%); }
   body h2 {
+    text-transform: uppercase;
     font-weight: 800;
-    font-style: normal;
-    text-align: center; }
+    font-style: normal; }
   body h3 {
+    text-transform: uppercase;
     font-weight: 700;
-    font-style: normal;
-    text-align: center; }
+    font-style: normal; }
   body h4 {
+    text-transform: uppercase;
     font-weight: 500;
-    font-style: normal;
-    text-align: center; }
-  body h5 {
-    font-weight: 800;
-    font-style: italic;
-    text-align: center; }
+    font-style: normal; }
 
 .content-row {
   display: flex;
@@ -444,15 +450,13 @@ body {
   .content-box--half-box {
     height: 25vh; }
   .content-box--download {
-    background-image: url("../images/download.png");
+    background-image: url("../images/download.jpg");
     background-size: cover;
     height: 75vh; }
   .content-box--how-it-works {
-    background-image: url("../images/how_it_works.png");
-    background-size: cover;
     height: 50vh; }
   .content-box--terms {
-    background-image: url("../images/terms.png");
+    background-image: url("../images/terms.jpg");
     background-size: cover;
     height: 50vh; }
   .content-box--join {
@@ -484,7 +488,7 @@ body {
     min-height: 25vh;
     min-width: 100vw; }
   .quarter-half {
-    mmin-height: 25vh;
+    min-height: 25vh;
     min-width: 100vw; }
   .content {
     min-height: 25vh;
@@ -521,12 +525,12 @@ body {
       background-size: cover;
       border: 1px solid #fff; }
     .content-box--mobile-download {
-      background-image: url("../images/download.png");
+      background-image: url("../images/download.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       height: 25vh; }
     .content-box--mobile-terms {
-      background-image: url("../images/mobile_terms.png");
+      background-image: url("../images/terms.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       height: 25vh; } }

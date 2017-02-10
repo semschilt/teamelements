@@ -27,17 +27,15 @@
         height: 25vh;
       }
       &--download {
-        background-image: url("../images/download.png");
+        background-image: url("../images/download.jpg");
         background-size: cover;
         height: 75vh;
       }
       &--how-it-works {
-        background-image: url("../images/how_it_works.png");
-        background-size: cover;
         height: 50vh;
       }
       &--terms {
-        background-image: url("../images/terms.png");
+        background-image: url("../images/terms.jpg");
         background-size: cover;
         height: 50vh;
       }
@@ -86,7 +84,7 @@
     min-width: 100vw;
   }
   .quarter-half {
-    mmin-height: 25vh;
+    min-height: 25vh;
     min-width: 100vw;
   }
   .content {
@@ -134,13 +132,13 @@
         border: 1px solid $white;
       }
       &--mobile-download {
-        background-image: url("../images/download.png");
+        background-image: url("../images/download.jpg");
         background-repeat:no-repeat;
         background-size: cover;
         height: 25vh;
       }
       &--mobile-terms {
-        background-image: url("../images/mobile_terms.png");
+        background-image: url("../images/terms.jpg");
         background-repeat:no-repeat;
         background-size: cover;
         height: 25vh;
