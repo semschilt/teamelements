@@ -39,7 +39,6 @@ textarea{
   font-family:$raleway;
   font-size:20px;
   border:none;
-  margin: 0 auto;
   text-align:center;
   margin-left:40%;
 }
@@ -56,5 +55,6 @@ input[type=checkbox]:checked + div {
   opacity:1;
 }
 .contact-form{
-  padding: 40px;
+  padding: 20px;
+  margin-top: 15%;
 }
