@@ -1,4 +1,8 @@
 .navigation{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 400ms, opacity 400ms;
+
     width:250px;
     height:100vh;
     z-index: -1;
@@ -13,7 +17,7 @@
     .nav-item{
       margin: 0;
       &:nth-child(1){
-         padding-top: 75%;
+         padding-top: 60%;
       }
     }
 
@@ -31,7 +35,7 @@
 }
 
 .register-button {
-  margin: 20% 5%;
+  margin: 50% 5%;
   background-color: $red;
 }
 

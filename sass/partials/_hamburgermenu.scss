@@ -8,18 +8,32 @@ label[for="menu-toggle"] {
   display: block;
   width: $hamburger-width;
   height: $hamburger-height;
-  border: $hamburger-line-width * 6 solid $hamburger-background-color;
-  background: $hamburger-background-color;
+  //border: $hamburger-line-width * 6 solid transparent;
+  //background: $hamburger-background-color;
   &:hover {
     cursor: pointer;
   }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    border: 70px solid transparent;
+    border-left-color: $hamburger-background-color;
+    border-top-color: $hamburger-background-color;
+
+  }
+
 
   .hamburger-icon {
     position: absolute;
     height: $hamburger-line-width;
 
-    top: 0;
-    left: 0;
+    top: 35px;
+    left: 20px;
     right: 0;
     width: 100%;
 
@@ -28,27 +42,40 @@ label[for="menu-toggle"] {
     border-radius: $hamburger-line-width/2;
 
     &:nth-of-type(2) {
-      top: 50%;
-      margin-top: -1 * ($hamburger-line-width/2);
+
+      left: 20px;
+      margin-top: -5 * ($hamburger-line-width/2);
     }
 
     &:last-of-type {
       bottom: 0;
-      top: auto;
+      top: 47px;
+      right: 0;
     }
+
   }
 }
 
-.navigation{
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 400ms, opacity 400ms;
-}
 
 input[type="checkbox"]#menu-toggle:checked ~ .label-for-check {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index:-1;
+    border: 70px solid transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    transition: visibility 400ms, opacity 400ms;
+
+
+  }
     //hoofdpijn!!
     background-color: transparent;
-    border: $hamburger-line-width * 6 solid transparent;
+   // border: $hamburger-line-width * 6 solid transparent;
     transition: visibility 400ms, opacity 400ms;
 
   .hamburger-icon:first-of-type,
@@ -57,8 +84,8 @@ input[type="checkbox"]#menu-toggle:checked ~ .label-for-check {
     top: 50%;
     left: 50%;
     right: auto;
-    margin-top: -1 * ($hamburger-line-width / 2);
-    margin-left: -1 * ($hamburger-height / 2);
+    margin-top: 6 * ($hamburger-line-width / 2);
+    margin-left: 0.1 * ($hamburger-height / 2);
   }
   .hamburger-icon:first-of-type {
     transform: rotate(45deg);
@@ -73,6 +100,7 @@ input[type="checkbox"]#menu-toggle:checked ~ .label-for-check {
   .hamburger-icon:last-of-type {
     transform: rotate(-45deg);
   }
+
 }
 
 input[type="checkbox"]:checked ~ .navigation  {
@@ -82,4 +110,6 @@ input[type="checkbox"]:checked ~ .navigation  {
   transition:
     visibility $hamburger-animation-speed,
     opacity $hamburger-animation-speed;
+
+
 }
