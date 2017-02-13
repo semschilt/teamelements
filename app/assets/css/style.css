@@ -729,64 +729,60 @@ input[type="checkbox"]:checked ~ .navigation {
   visibility: visible;
   transition: visibility 550ms, opacity 550ms; }
 
-.contact {
-  background-color: #F56462;
-  width: 350px;
-  margin: 0 auto;
-  margin-top: -100vh;
-  margin-left: 250px;
-  height: 100vh;
-  position: absolute; }
+@media screen and (max-width: 768px) {
+  .contact {
+    display: none; } }
 
-.input, .send {
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-  padding: 1% 1% 1% 3%;
-  outline: none; }
-
-textarea {
-  height: 150px;
-  resize: none; }
-
-.send {
-  width: 84.5%;
-  background-color: #75C398;
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-style: normal;
-  outline: none;
-  border: 1px solid #75C398; }
-
-.input {
-  border: 1px solid #fff;
-  text-transform: uppercase;
-  margin-bottom: 5%;
-  padding: 4% 0 4% 4%;
-  outline: none; }
-
-.title {
-  font-family: Raleway;
-  font-size: 20px;
-  border: none;
-  text-align: center;
-  margin-left: 40%; }
-
-input {
-  display: none; }
-
-.contact-show {
-  opacity: 0;
-  height: auto;
-  overflow: hidden; }
-
-input[type=checkbox]:checked + div {
-  opacity: 1; }
-
-.contact-form {
-  padding: 20px;
-  margin-top: 15%; }
+@media screen and (min-width: 768px) {
+  .contact {
+    background-color: #F56462;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: -100vh;
+    margin-left: 250px;
+    height: 100vh;
+    position: absolute; }
+  .input, .send {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1% 1% 1% 3%;
+    outline: none; }
+  textarea {
+    height: 150px;
+    resize: none; }
+  .send {
+    width: 84.5%;
+    background-color: #75C398;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: normal;
+    outline: none;
+    border: 1px solid #75C398; }
+  .input {
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    padding: 4% 0 4% 4%;
+    outline: none; }
+  .title {
+    font-family: Raleway;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    margin-left: 40%; }
+  input {
+    display: none; }
+  .contact-show {
+    opacity: 0;
+    height: auto;
+    overflow: hidden; }
+  input[type=checkbox]:checked + div {
+    opacity: 1; }
+  .contact-form {
+    padding: 20px;
+    margin-top: 15%; } }
 
 @media screen and (min-width: 768px) {
   body {
